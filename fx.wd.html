@@ -1,0 +1,38 @@
+<html>
+<body background="http://w3school.com.cn/i/eg_background.jpg">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<h1 align="center">计算器</h1>
+	<table border="8" align="center" cellpadding="100">
+		<tr>
+		<th colspan="4">
+			<INPUT NAME="CAL" TYPE="TEXT" SIZE=1 VALUE="">结果：
+            <INPUT NAME="SUM" TYPE="TEXT" SIZE=16 VALUE="" onChange="KeyinNum()">
+		</tr>
+		<tr>
+		<td><INPUT TYPE="BUTTON" VALUE=" 1 " onClick="entry('1')"></td>
+		<td><INPUT TYPE="BUTTON" VALUE=" 2 " onClick="entry('2')"></td>
+		<td><INPUT TYPE="BUTTON" VALUE=" 3 " onClick="entry('3')"></td>
+		<td><INPUT TYPE="BUTTON" VALUE=" * " onClick="calc2('*')"></td>
+	    </tr>
+	    <tr>
+		<td><INPUT TYPE="BUTTON" VALUE=" 4 " onClick="entry('4')"></td>
+		<td><INPUT TYPE="BUTTON" VALUE=" 5 " onClick="entry('5')"></td>
+		<td><INPUT TYPE="BUTTON" VALUE=" 6 " onClick="entry('6')"></td>
+		<td><INPUT TYPE="BUTTON" VALUE=" / " onClick="calc2('/')"></td>
+	    </tr>
+	    <tr>
+		<td><INPUT TYPE="BUTTON" VALUE=" 7 " onClick="entry('7')"></td>
+		<td><INPUT TYPE="BUTTON" VALUE=" 8 " onClick="entry('8')"></td>
+		<td><INPUT TYPE="BUTTON" VALUE=" 9 " onClick="entry('9')"></td>
+		<td><INPUT TYPE="BUTTON" VALUE=" - " onClick="calc2('-')"></td>
+	    </tr>
+	    <tr>
+		<td><INPUT TYPE="BUTTON" VALUE=" 0 " onClick="entry('0')"></td>
+		<td><INPUT TYPE="BUTTON" VALUE=" . " onClick="entry('.')"></td>
+		<td><INPUT TYPE="BUTTON" VALUE=" = " onClick="calc2('=')"></td>
+		<td><INPUT TYPE="BUTTON" VALUE=" + " onClick="calc2('+')"></td>
+	    </tr>
+	</table>
+</body>
+</html>
+

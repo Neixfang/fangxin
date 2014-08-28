@@ -1,0 +1,14 @@
+<html>
+<body>
+<script>
+a=2;
+b=3;
+c=a;
+a=b;
+b=c;
+document.write(a + "<br>");
+document.write(b + "<br>");
+</script>
+
+</body>
+</html>
