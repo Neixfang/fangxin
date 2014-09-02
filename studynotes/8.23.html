@@ -1,0 +1,56 @@
+<html>
+<body>
+<h7><b>8.23</b></h7>
+<body background="http://w3school.com.cn/i/eg_background.jpg">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<p>点击下面的按钮来显示今天是周几：</p>
+
+<button onclick="myFunction()">点击这里</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction()
+{
+var x;
+var d=new Date().getDay();
+switch (d)
+  {
+  case 0:
+    x="Today it's Sunday";
+    break;
+  case 1:
+    x="Today it's Monday";
+    break;
+  case 2:
+    x="Today it's Tuesday";
+    break;
+  case 3:
+    x="Today it's Wednesday";
+    break;
+  case 4:
+    x="Today it's Thursday";
+    break;
+  case 5:
+    x="Today it's Friday";
+    break;
+  case 6:
+    x="Today it's Saturday";
+    break;
+  }
+document.getElementById("demo").innerHTML=x;
+}
+</script>
+<p>点击下面的按钮，将代码块循环五次：</p>
+<button onclick="myFunction()">点我</button>
+<p id="demo"></p>
+<script>
+function myFunction()
+ {
+    x=x + "the number is" + i + "<br>"
+  }
+  document.getElementById("demo").innerHTML=x;
+}
+</script>
+	</body>
+	</html>
