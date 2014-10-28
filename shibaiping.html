@@ -1,30 +1,26 @@
 <html>
-<html>
 <body>
 <p>点击下面的按钮，去除空格。</p>
 <button onclick="removeSpace()">点击这里</button>
 <p id="outputField"></p>
 
 <script>
-function removeSpace()
+function removeSpace(input)
 {
-var output = ""
-for (int i = 0; i < input.length(); i++) { 
-	if (input[i] !=" ") {
-       		output = output + input[i];
-        }
+	var output = "";
+	for (i = 0; i < input.length; i++) { 
+		if (input[i] !=" ") {
+	       	output = output + input[i];
+	    }
+	}
+	return output;
 }
 
-return output;
+var inputStr = "Hello world Fang Xin aadsf asdfa ";
+var result = removeSpace(inputStr);
 
-}
-
-
-document.getElementById("emoveSpace").
-output = removeSpace(str)
-document.findElementById("outputField").content = output
+document.write(result);
 
 </script>
 </body>
-</html>
 </html>
