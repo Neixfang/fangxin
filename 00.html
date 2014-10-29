@@ -1,0 +1,28 @@
+<html>
+<body>
+
+<h1>我的第一段 JavaScript</h1>
+
+<p>点击，去除输入值中的空格</p>
+
+<input id="removeSpace" type="text">
+
+<script>
+function removeSpace(input)
+{
+	var input=document.getElementById("removeSpace").value;
+
+	var output = "";
+	for (i = 0; i < input.length; i++) { 
+		if (input[i] !=" ") {
+	       	output = output + input[i];
+	    }
+	}
+	return output;
+}
+</script>
+
+<button type="button" onclick="removeSpace()">点击这里</button>
+
+</body>
+</html>
