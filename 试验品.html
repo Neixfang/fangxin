@@ -1,0 +1,92 @@
+<html>
+<body>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+<input id="kk" type="text">
+
+<script>
+function reverse()
+{
+	var input=document.getElementById("kk").value;
+
+	var output = "";
+	for (i = input.length-1; i >= 0; i--) 
+		{
+	       	output = output + input[i];
+	    document.getElementById("output").innerHTML =output;
+	}
+	
+    
+}
+function removeSpace()
+{
+	var input=document.getElementById("kk").value;
+
+	var output = "";
+	for (i = 0; i < input.length; i++) { 
+		if (input[i] !=" ") {
+	       	output = output + input[i];
+	    }
+	}
+	document.getElementById("output").innerHTML =output;
+	return output;
+	
+}
+function pickoutmax()
+{
+   var input=document.getElementById("kk").value;	
+   var a = "",b = "",x=0,y=0;
+   for(i=0;i<input.length;i++)
+   {
+    a=input[i];
+    x=0;
+    for(j=0;j<input.length;j++)
+     {
+     b=input[j];
+     if(a==b)
+     	{
+     	x++;
+     		}
+     		 }
+     	if(x>y)
+     	  {
+            y=x;
+    
+                }
+   
+
+	 }
+	 for(i=0;i<input.length;i++)
+   {
+    a=input[i];
+    x=0;
+    for(j=0;j<input.length;j++)
+     {
+     b=input[j];
+     if(a==b)
+     	{
+     	x++;
+     		}
+     		 }
+     		 if(y==x)
+     		   {	
+     		   		document.getElementById("output").innerHTML =b,;
+     		   }
+     		     }
+   document.getElementById("output").innerHTML =y;
+}
+
+</script>
+
+
+<button type="button" onclick="reverse()">点击这里,反转输入值</button>
+
+<button type="button" onclick="removeSpace()">点击这里，去掉空格</button>
+<button type="button" onclick="pickoutmax()">点击这里，挑选出输入值中重复次数最多的字符</button>
+<div id="output" ></div>
+
+</body>
+</html>
