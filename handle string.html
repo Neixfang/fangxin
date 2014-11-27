@@ -64,6 +64,27 @@ function pickoutmax()
    document.getElementById("output").innerHTML =c+y;
 }
 
+function dislodgesamestring(){
+   var input=document.getElementById("kk").value;  
+   var a = "",b = "",c = "",d = "",e="";
+   for(i=0;i<input.length;i++){
+   
+   a=input[i];
+   
+   
+    for(j=i+1;j<input.length;j++){
+    b=input[j];
+    if(b!=a){ 
+      c=c+b;  
+}
+}
+  e=e+a;
+  d=e+c;
+  input=d;
+  c="";
+}
+document.getElementById("output").innerHTML =e;
+}
 </script>
 
 
@@ -71,6 +92,8 @@ function pickoutmax()
 
 <button type="button" onclick="removeSpace()">点击这里，去掉空格</button>
 <button type="button" onclick="pickoutmax()">点击这里，挑选出输入值中重复次数最多的字符</button>
+
+<button type="button" onclick="dislodgesamestring()">点击这里，去除重复的字符</button>
 <div id="output" ></div>
 
 </body>

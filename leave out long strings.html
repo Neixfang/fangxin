@@ -1,0 +1,22 @@
+<html>
+<body>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<input id="kk" type="text">
+<script>
+var input=document.getElementById("kk").value;
+var a = input,b = "...";
+function leaveout(){
+   if（input.length<=5）{
+   	document.getElementById("output").innerHTML =a;
+}
+   else{
+   	document.getElementById("output").innerHTML =a+b;
+
+}
+}
+</script>
+<button type="button" onclick="leaveout()">点击这里，省略长字符串</button>
+<div id="output" ></div>
+
+</body>
+</html>

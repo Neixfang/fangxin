@@ -1,0 +1,23 @@
+<html>
+<body>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<input id="kk" type="text">
+<input id="zz" type="text">
+<script>
+function exchange(){
+	var input1=document.getElementById("kk").value;
+	var input2=document.getElementById("zz").value;
+	var a=input1,b=input2,c="";
+	
+       c = a;
+       a = b;
+       b = c;
+	
+	document.getElementById("kk").value =a;
+	document.getElementById("zz").value =b;
+}
+</script>
+<button type="button" onclick="exchange()">点击这里，对调输入框中的内容</button>
+
+</body>
+</html>
