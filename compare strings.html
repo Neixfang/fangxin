@@ -1,0 +1,52 @@
+<html>
+<body>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<input id="kk" type="text">
+<input id="zz" type="text">
+<script>
+function compare(){
+	var input1=document.getElementById("kk").value;
+	var input2=document.getElementById("zz").value;
+	var a="",b="",c="";
+	if(input2.length>=input1.length){
+		c=input2;
+	}
+	else{
+		c=input1;
+	}
+	for(i=0;i<c.length;i++){
+		a=input1[i],b=input2[i];
+		if(a==b){
+		    if(i==c.length-1){
+		    	document.getElementById("output").innerHTML = 0;break;
+		    }
+		    continue;
+		}
+		else if(a>b){
+			document.getElementById("output").innerHTML = 1;break;
+		}
+		else if(a<b){
+			document.getElementById("output").innerHTML = -1;break;
+		}
+		else{
+			
+		    	if(input1.length>input2.length){
+		    		document.getElementById("output").innerHTML = 1;break;
+		    	}
+		    	else if(input1.length<input2.length){
+		    		document.getElementById("output").innerHTML = -1;break;
+		    	}
+		    	else{
+		    		document.getElementById("output").innerHTML = 0;break;
+		    	}
+		    	
+		    
+		}
+	}
+
+}
+</script>
+<button type="button" onclick="compare()">点击这里，比较两个字符串的大小</button>
+<div id="output" ></div>
+</body>
+</html>
